@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    background-color: white;
+    overflow: auto;
+}
+
+header {
+    background-color: #27B6C1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+header > h1 {
+    display: inline-block;
+    font-size: 40px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    padding: 10px 0;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+#help {
+    float: right;
+    position: relative;
+    margin: 18px 20px;
+}
+
+#help:hover {
+    cursor: pointer;
+}
+
+.credentials {
+    text-align: center;
+}
+
+.credentials > h1 {
+    line-height: 50px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#psd {
+    margin-left: 1px;
+}
+
+.btn-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 25%;
+    padding: 5px;
+    background-color: #27B6C1;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    transition: background-color .3s ease;
+}
+
+.btn a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: #287D7F;   
+    cursor: pointer;
+}
