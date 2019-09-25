@@ -18,7 +18,7 @@ header {
     padding: 10px;
     width: 100vw;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -35,53 +35,29 @@ header > h1 {
     height: 50px;
 }
 
-#help {
+#settings {
     position: absolute;
     top: 30%;
-    right: 1%;
+    left: 1%;
     color: white;
     margin-left: 20px;
 }
 
-#help:hover {
+#settings:hover {
     cursor: pointer;
 }
 
-.credentials {
-    text-align: center;
+main {
+    margin-top: 120px;
 }
 
-.credentials > h1 {
-    line-height: 50px;
-    letter-spacing: 5px;
-    word-spacing: 5px;
-    margin-bottom: 30px;
-}
-
-.input-box {
-    outline: none;
-    border: none;
-    border-bottom: 2px solid black;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-#psd {
-    margin-left: 1px;
-}
-
-.btn-bottom {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.btn {
+button {
     display: block;
     font-size: 16px;
     color: white;
     letter-spacing: 2px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 25%;
     padding: 5px;
     background-color: #27B6C1;
@@ -91,19 +67,7 @@ header > h1 {
     transition: background-color .3s ease;
 }
 
-.btn:hover {
+button:hover {
     background-color: #287D7F;   
     cursor: pointer;
-}
-
-@media screen and (max-width: 450px) {
-    .btn {
-        width: 40%;
-    }
-    #help {
-        margin-right: 10px;
-    }
-    header {
-        text-align: left;
-    }
 }
