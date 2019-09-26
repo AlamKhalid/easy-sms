@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/style2.css"/>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"/>
     </head>
@@ -15,11 +16,33 @@
             <img id="logo" src="images/letter-icon.png"/>
             <h1>Easy Sms</h1>
             <i id="settings" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            <i id="plus" class="fa fa-plus fa-2x"></i>
         </header>
 
-        <main>
+        <section class="section-1">
             <button>Send to Society</button>
-            <button>Import from File</button>
-        </main>
+            <button id="import-btn">Import from File</button>
+        </section>
+
+        <section class="section-2" style="display:none">
+            <button class="import"><i id="btn-plus" class="fa fa-plus"></i>Import File</button>
+            <div class="options">
+                <label id="via">via:</label>
+                <div><input type="radio" name="format"><label class="option">SMS</label></div>
+                <div><input type="radio" name="format"><label class="option">Email</label></div>
+            </div>
+            <textarea rows="15" placeholder="Type your message here"></textarea>
+            <button class="import"><i id="btn-plus" class="fa fa-envelope-o"></i>Send</button>
+        </section>
+
+        <script>
+            $(document).ready(function() {
+                $('#import-btn').click(function() {
+                    $('.section-1').hide();
+                    $('.section-2').show();
+                });
+            });
+        </script>
+
     </body>
 </html>
