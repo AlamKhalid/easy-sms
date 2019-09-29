@@ -96,7 +96,29 @@ header > h1 {
     cursor: pointer;
 }
 
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 1024px) {
+    header > h1, h1 {
+        font-size: 50px;
+    }
+    .btn {
+        width: 50%;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .input-box {
+        width: 50%;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #help {
+        right: 5%;
+    }
+}
+
+@media only screen  and (max-width: 450px) {
+    header > h1, h1 {
+        font-size: 30px;
+    }
     .btn {
         width: 40%;
     }
@@ -106,4 +128,22 @@ header > h1 {
     header {
         text-align: left;
     }
+    h1 {
+        font-size: 30px;
+    }
+    .btn {
+        font-size: 16px;
+        width: 50%;
+    }
+    .input-box {
+        width: 50%;
+        font-size: 16px;
+    }
+    .size-set {
+        font-size: 1.33em !important;
+    }
+    #help {
+        right: 3%;
+    }
 }
+
