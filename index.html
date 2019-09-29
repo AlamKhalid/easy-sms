@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"/>
     </head>
     <body>
+
         <section class="section-3" style="display:none">
             <div id="pop-up-settings">
                 <div class="cross-div"><i id="cross" class="fa fa-times fa-2x" aria-hidden="true"></i></div>
@@ -22,9 +23,19 @@
             </div>
         </section>
 
+        <section class="add-new-msg" style="display:none">
+            <div class="pop-up-msg">
+                <div class="cross-div"><i id="cross-2" class="fa fa-times fa-2x" aria-hidden="true"></i></div>
+                <h2 id="info">New Message</h2>
+                <input id="msg-name" type="text" placeholder="Message Name" required>
+                <textarea id="msg-box" placeholder="Message"></textarea>
+                <button>Save</button>
+            </div>
+        </section>
+
         <section class="portfolios" style="display:none">
             <div class="pop-up-portfolio" style="height:50%">
-                <div class="cross-div"><i style="margin-bottom: 5px;" id="cross-1" class="fa fa-times fa-2x" aria-hidden="true"></i></div>
+                <div class="cross-div"><i style="margin-bottom: 5px; margin-right: 20px" id="cross-1" class="fa fa-times fa-2x" aria-hidden="true"></i></div>
                 <div style="overflow-y: scroll;height: 85%">
                     <label class="container">All<input type="checkbox" name="checked-portfolios" checked="checked"><span class="checkmark"></span></label>
                     <label class="container">Logistic<input type="checkbox" name="checked-portfolios"><span class="checkmark"></span></label>
@@ -47,6 +58,7 @@
             <img id="logo" src="images/letter-icon.png"/>
             <h1>Easy Sms</h1>
             <i id="settings" class="fa fa-cog fa-2x" aria-hidden="true"></i>
+            <i id="back" style="display:none" class="fa fa-caret-left fa-2x" aria-hidden="true"></i>
             <i title="Import message" id="plus" class="fa fa-plus fa-2x"></i>
         </header>
 
@@ -64,43 +76,19 @@
                 <div><input type="radio" name="format" id="email-box" value="email"><label class="option">Email</label></div>
             </div>
             <input class="subject" type="text" placeholder="Subject" required>
-            <textarea rows="15" placeholder="Type your message here" required></textarea>
+            <textarea class="msg" rows="15" placeholder="Type your message here" required></textarea>
             <button class="top-button"><i id="btn-plus" class="fa fa-envelope-o"></i>Send</button>
         </section>
 
-        <script>
-            $(document).ready(function() {
-                $('#import-btn').click(function() {
-                    $('#plus').show();
-                    $('.section-1').hide();
-                    $('.section-2').show();
-                    $('#portfolio').hide();
-                });
-                $('#society-btn').click(function() {
-                    $('#plus').show();
-                    $('.section-1').hide();
-                    $('.section-2').show();
-                    $('#import').hide();
-                });
-                $('#email-box').click(function() {
-                    $('.subject').show();
-                });
-                $('#sms-box').click(function() {
-                    $('.subject').hide();
-                });
-                $('#settings').click(function() {
-                    $('.section-3').show();
-                });
-                $('#cross').click(function() {
-                    $('.section-3').hide();
-                });
-                $('#cross-1').click(function() {
-                    $('.portfolios').hide();
-                });
-                $('#portfolio').click(function() {
-                    $('.portfolios').show();
-                });
-            });
+        <section class="predefined-msgs" style="display:none">
+            <button class="top-button" id="new-msg">Add new message</button>
+            <ul class="msgs-box">
+                <li>Interview</li>
+                <li>Meeting</li>
+            </ul>
+        </section>
+
+        <script src="events.js">
         </script>
 
     </body>

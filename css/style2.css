@@ -11,7 +11,7 @@ body {
     overflow: auto;
 }
 
-.section-3, .portfolios {
+.section-3, .portfolios, .add-new-msg {
     position:fixed;
     width:100%;
     height:100%;
@@ -19,7 +19,7 @@ body {
     z-index: 999;
 }
 
-#pop-up-settings, .pop-up-portfolio {
+#pop-up-settings, .pop-up-portfolio, .pop-up-msg {
     width: 50%;
     height: auto;
     position: absolute;
@@ -50,12 +50,12 @@ body {
     justify-content: flex-end;
 }
 
-#cross, #cross-1 {
+#cross, #cross-1, #cross-2 {
     margin-right: 10px;
     color: lightslategray;
 }
 
-#cross:hover, #cross-1:hover {
+#cross:hover, #cross-1:hover, #cross-2:hover {
     color: lightcoral;
 }
 
@@ -88,7 +88,7 @@ header > h1 {
     height: 50px;
 }
 
-#settings {
+#settings, #back {
     position: absolute;
     top: 30%;
     left: 1%;
@@ -96,7 +96,7 @@ header > h1 {
     margin-left: 20px;
 }
 
-#settings:hover {
+#settings:hover, #back:hover {
     cursor: pointer;
 }
 
@@ -200,7 +200,7 @@ input[type='radio']:checked:before {
     margin-bottom: 10px;
 }
 
-textarea {
+.msg {
     width: 50%;
     margin-left: 25%;
     resize: none;
@@ -269,5 +269,51 @@ textarea {
     transform: rotate(45deg);
   }
 
+.msgs-box {
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid gray;
+    width: 50%;
+    height: auto;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
 
+.msgs-box li {
+    margin: 10px 0px;
+    background-color: #E6E6E6;
+    padding: 10px;
+}
+
+.msgs-box li:hover {
+    background-color: #A5A0A0;
+}
+
+.pop-up-msg {
+    height: 50%;
+    text-align: center;
+}
   
+#info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#msg-name {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#msg-box {
+    height: 60%;
+    resize: none;
+    width:90%;
+    margin-bottom: 10px;
+}
+
+#msg-name:focus, #msg-box:focus {
+    outline: none;
+    border:1px solid #27B6C1;
+}
