@@ -317,3 +317,38 @@ input[type='radio']:checked:before {
     outline: none;
     border:1px solid #27B6C1;
 }
+
+@media only screen and (max-width: 1024px) {
+    #settings {
+        left: 5%;
+    }
+    button {
+        width: 75%;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    #pop-up-settings, .pop-up-portfolio, .pop-up-msg {
+        width: 75%;
+    }
+    .list > li {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header > h1 {
+        font-size: 25px;
+    }
+    #logo {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
+    #settings {
+        font-size: 1.33rem !important;
+        left: 3%;
+    }
+    .list > li {
+        font-size: 20px;
+    }
+}
