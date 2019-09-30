@@ -333,6 +333,67 @@ input[type='radio']:checked:before {
     .list > li {
         font-size: 30px;
     }
+    .top-button {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        width: 75%;
+    }
+    .options {
+        width: 75%;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+    input[type='radio'] {
+        width: 25px;
+        height: 25px;
+    }
+    #plus {
+        right: 5%;
+    }
+    .msg {
+        width: 75%;
+        margin-left: 12.5%;
+        height: 65vh;
+        font-size: 22px;
+    }
+    .subject {
+        width: 75%;
+        margin-left: 12.5%;
+        height: 3vh;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #back {
+        top: 20%;
+        left: 5%;
+        font-size: 3em !important; 
+    }
+    .container {
+        font-size: 24px;
+    }
+    .msgs-box {
+        width: 75%;
+    }
+    .msgs-box > li {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: black;
+        font-weight: bolder;
+    }
+    .pop-up-msg h2 {
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+    #msg-name, #msg-box {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    #msg-name {
+        height: 3vh;
+    }
+    #msg-box {
+        height: 30vh;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -350,5 +411,8 @@ input[type='radio']:checked:before {
     }
     .list > li {
         font-size: 20px;
+    }
+    button {
+        font-size: 16px;
     }
 }
